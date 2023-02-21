@@ -1,0 +1,258 @@
+/* Styles for mobile version */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* Typography */
+
+.header-context>h1 {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+.header-context>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+}
+
+.btn-location {
+    background: none;
+    border: none;
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    color: #FFFFFF;
+    background-color: #151515;
+}
+
+.location {
+    width: 204px;
+    height: 72px;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-right {
+    width: 56px;
+    height: 72px;
+    background: #D5966C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-button {
+    display: flex;
+}
+
+.gallery-day>h2 {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #151515;
+    margin-bottom: 21px;
+}
+
+.gallery-day>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    margin-bottom: 32px;
+}
+
+.inspired {
+    width: 343px;
+    height: 293px;
+    background-color: #151515;
+}
+
+.inspired>h2 {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.inspired>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.footer-container {
+    width: 100%;
+    height: 336px;
+    background-color: #151515;
+}
+
+.footer-container>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+
+/* Positioning */
+
+.header-context {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 16px 0 16px;
+}
+
+.main-container {
+    padding: 120px 16px 120px 16px;
+}
+
+.gallery-image1 {
+    margin-bottom: 25px;
+}
+
+.gallery-image2,
+.gallery-image3 {
+    margin-bottom: 16px;
+}
+
+.inspired {
+    box-sizing: border-box;
+    text-align: start;
+    padding: 48px 24px 48px 24px;
+}
+
+.footer-container {
+    box-sizing: border-box;
+    padding: 48px 32px 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+/* CSS for location.html */
+
+.arrow-left {
+    width: 56px;
+    height: 72px;
+    background: #D5966C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button {
+    display: flex;
+    position: absolute;
+}
+
+.our-location {
+    width: 100%;
+    height: 493px;
+    background-color: #151515;
+    box-sizing: border-box;
+    padding: 48px 16px 56px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.our-location>h1 {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.our-location>h2 {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #D5966C;
+    margin-top: 28px;
+}
+
+.our-location>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.map-footer-container {
+    width: 100%;
+    height: 336px;
+    background-color: #D5966C;
+    box-sizing: border-box;
+    padding: 48px 32px 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.map-footer-container>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #151515;
+}
+
+.map-social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
