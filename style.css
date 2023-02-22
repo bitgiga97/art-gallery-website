@@ -153,10 +153,15 @@ body {
     margin-bottom: 16px;
 }
 
+img {
+    width: 100%;
+}
+
 .inspired {
     box-sizing: border-box;
     text-align: start;
     padding: 48px 24px 48px 24px;
+    width: 100%;
 }
 
 .footer-container {
