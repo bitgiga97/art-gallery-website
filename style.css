@@ -160,10 +160,22 @@ img {
 
 /* Images */
 
+.black-background {
+    width: 450px;
+    height: 800px;
+    background-color: #151515;
+}
+
 .tablet-hero,
+.desktop-hero,
 .tablet-gallery-img1,
 .tablet-gallery-img2,
-.tablet-gallery-img3 {
+.tablet-gallery-img3,
+.black-background,
+.desktop-gallery-img1,
+.desktop-gallery-img2,
+.desktop-gallery-img3,
+.desktop-map {
     display: none;
 }
 
@@ -284,7 +296,8 @@ img {
     .mobile-hero,
     .mobile-gallery-img1,
     .mobile-gallery-img2,
-    .mobile-gallery-img3 {
+    .mobile-gallery-img3,
+    .desktop-map {
         display: none;
     }
     .tablet-hero {
@@ -327,6 +340,8 @@ img {
         grid-template-columns: repeat(2, auto);
         gap: 11px;
         grid-template-rows: repeat(4, auto);
+        align-items: center;
+        margin: 0 auto;
     }
     .gallery-image1,
     .gallery-image2 {
@@ -411,5 +426,158 @@ img {
     }
     .footer-container>p {
         width: 281px;
+    }
+}
+
+
+/* Responsive styles for desktop version index.html */
+
+@media screen and (min-width: 1440px) {
+    .tablet-hero {
+        display: none;
+    }
+    .desktop-hero {
+        display: block;
+    }
+    .hero-image {
+        position: absolute;
+        left: 450px;
+    }
+    .black-background {
+        display: block;
+        position: relative;
+    }
+    .header-context>h1 {
+        width: 514px;
+        height: 176px;
+        font-size: 96px;
+        line-height: 88px;
+        color: #FFFFFF;
+        mix-blend-mode: difference;
+        position: absolute;
+        top: 40px;
+        left: -229px;
+    }
+    .header-context>p {
+        font-size: 22px;
+        line-height: 32px;
+        position: absolute;
+        top: 40px;
+        left: 536px;
+        width: 350px;
+        height: 160px;
+    }
+    .location-button {
+        position: absolute;
+        left: 536px;
+        top: 265px;
+    }
+    .header-container {
+        margin-bottom: 180px;
+    }
+    .main-container {
+        padding: 0 165px 180px 165px;
+        width: 1110px;
+        gap: 30px;
+    }
+    /* IMAGES */
+    .tablet-gallery-img1,
+    .tablet-gallery-img2,
+    .tablet-gallery-img3,
+    .tablet-map {
+        display: none;
+    }
+    .desktop-gallery-img1,
+    .desktop-gallery-img2,
+    .desktop-gallery-img3 {
+        display: block;
+    }
+    .gallery-day {
+        width: 350px;
+        height: 280px;
+    }
+    .gallery-image1 {
+        width: 635px;
+        height: 400px;
+        margin-left: -192px;
+    }
+    .gallery-image2 {
+        width: 635px;
+    }
+    .gallery-image3 {
+        width: 445px;
+    }
+    .inspired {
+        width: 445px;
+        padding: 64px 54px 65px 48px;
+    }
+    .footer-container {
+        padding: 80px 165px 80px 165px;
+    }
+    .footer-container>p {
+        width: 430px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    /* Responsive styles for desktop version location.html */
+    .desktop-map {
+        display: block;
+    }
+    .back-button {
+        margin-left: 156px;
+    }
+    .our-location {
+        height: 548px;
+        padding: 104px 165px 128px 165px;
+        column-gap: 220px;
+    }
+    .our-location>h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .our-location>h2 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .our-location>p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .newly-opened {
+        width: 540px;
+    }
+    .map-footer-container {
+        padding: 80px 165px 80px 165px;
+    }
+    .map-footer-container>p {
+        width: 430px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    /* Button Hover styles */
+    .location-button:hover .btn-location {
+        background-color: #d5966c;
+    }
+    .location-button:hover .arrow-right {
+        background-color: #151515;
+    }
+    .location-button:hover .location {
+        background-color: #d5966c;
+    }
+    .back-button:hover .btn-location {
+        background-color: #d5966c;
+    }
+    .back-button:hover .arrow-left {
+        background-color: #151515;
+    }
+    .back-button:hover .location {
+        background-color: #d5966c;
+    }
+    /* Social icons hover styles */
+    .fb-icon:hover,
+    .instagram-icon:hover,
+    .twitter-icon:hover {
+        cursor: pointer;
+        filter: invert(65%) sepia(17%) saturate(978%) hue-rotate(341deg) brightness(180%) contrast(100%);
     }
 }
